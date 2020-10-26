@@ -45,7 +45,8 @@ begin
         8: b := b + (' optsprezece');
         9: b := b + (' nouăsprezece')
       end
-    else
+      else
+    if d = 0 then 
       case e of
         1: b := b + (' unu');
         2: b := b + (' doi');
@@ -56,6 +57,18 @@ begin
         7: b := b + (' șapte');
         8: b := b + (' opt');
         9: b := b + (' nouă')
+      end
+    else
+      case e of
+        1: b := b + (' și unu');
+        2: b := b + (' și doi');
+        3: b := b + (' și trei');
+        4: b := b + (' și patru');
+        5: b := b + (' și cinci');
+        6: b := b + (' și șase');
+        7: b := b + (' și șapte');
+        8: b := b + (' și opt');
+        9: b := b + (' și nouă')
       end;
     writeln(b);
   end
